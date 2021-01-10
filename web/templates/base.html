@@ -1,0 +1,15 @@
+ {% extends "bootstrap/base.html" %}
+
+{% block title %}
+    {% if title %}
+    <title>{{ title }}</title>
+    {% else %}
+    <title>Flask App</title>
+    {% endif %}
+{% endblock %}
+
+{% block navbar %}
+  {% include "navbar.html" %}
+{% endblock %}
+
+{% block content %} {% endblock %}
